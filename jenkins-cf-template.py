@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*- 
-
-
 from troposphere import (
 	Base64,
 	ec2,
@@ -28,8 +26,8 @@ from awacs.aws import (
 
 from awacs.sts import AssumeRole
 
-ApplicationName = "HelloWorld"
-ApplicationPort = "3000"
+ApplicationName = "jenkins"
+ApplicationPort = "8080"
 
 GithubAccount = "Devaom"
 GithubAnsibleURL = "http://github.com/{}/devops-ansible".format(GithubAccount)
