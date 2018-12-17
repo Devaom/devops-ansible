@@ -8,7 +8,7 @@
   yum_repository:
     name: jenkins
     description: jenkins repository
-    baseurl: http://pkg.jenkins.io/redhat
+    baseurl: https://pkg.jenkins.io/redhat/jenkins.repo
     enabled: no
     gpgcheck: yes
 - name: Install Jenkins
