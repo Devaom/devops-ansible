@@ -89,6 +89,7 @@ ud = Base64(Join('\n', [ # Join함수의 첫번째 인자값은 delimiter(구분
 	"#!/bin/bash",
 	"yum remove java-1.7.0-openjdk -y",
 	"yum install java-1.8.0-openjdk -y",
+	"yum install --enablerepo=epel -y git", # 이거 없어서 내 git 레포지토리를 가져올 수가 없엇따...ㅜㅜ
 	"pip install ansible",
 	AnsiblePullCmd,
 	"echo '*/10 * * * * root {}' > /etc/cron.d/ansible-pull".format(AnsiblePullCmd)
